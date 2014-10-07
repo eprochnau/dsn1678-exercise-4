@@ -29,4 +29,20 @@ section {
 /*DIPPER*/
 .dipper {
 	width: 200px;
+	opacity: 0;
+}
+
+.js-dipper-fade {
+	-webkit-animation: dipper-fade 1s linear;
+}
+
+/*Don't forget other prefixes when coding for all browsers*/
+@-webkit-keyframes dipper-fade {
+	0% {
+		opacity: 0;
+	}
+	
+	100% {
+		opacity: 1;
+	}
 }
