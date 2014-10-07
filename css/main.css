@@ -33,7 +33,12 @@ section {
 }
 
 .js-dipper-fade {
-	-webkit-animation: dipper-fade 1s linear;
+	-webkit-animation: dipper-fade 1s linear forwards;
+	
+	/*
+	animation-fill-mode: forwards;
+	Will tell animation to stay at its end state after complete
+	*/
 }
 
 /*Don't forget other prefixes when coding for all browsers*/

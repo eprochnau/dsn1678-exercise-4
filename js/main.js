@@ -8,12 +8,10 @@ $win.on('scroll', function () {
 	var scrollPos = $win.scrollTop();
 	
 	$sun.css('transform', 'rotate(' + scrollPos / 5 + 'deg)');
-	
 	$sunSection.css('background-position', 'center ' + scrollPos / 3 + 'px');
 	
 });
 
 $dipperSection.waypoint(function () {
-	
-	console.log('Visible!');
-});
+	$dipper.addClass('js-dipper-fade');
+}, { offset: '50%' });
