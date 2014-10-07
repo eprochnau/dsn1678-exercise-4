@@ -58,7 +58,7 @@ section {
 }
 
 .shuttle {
-	width: 200px;
+	width: 300px;
 	opacity: 0;
 	transform: translateY(100px);
 }
